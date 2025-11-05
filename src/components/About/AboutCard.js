@@ -11,22 +11,22 @@ function AboutCard() {
             Hi Everyone, I am <span className="purple">Lavankishore </span>
             from <span className="purple"> Chennai, India.</span>
             <br />
-            I'm Final Year Student.
+            I recently completed my B.Tech in Information Technology.
             <br />
-            I have Currently Pursuing my B.Tech Degree in the Specialization of Information Technology.
+            I am passionate about technology, problem-solving, and continuous learning.
             <br />
             <br />
             Apart from coding, some other activities that I love to do!
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <ImPointRight /> Playing sports
             </li>
             <li className="about-activity">
-              <ImPointRight /> Drawing Portraits
+              <ImPointRight /> Art Work
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImPointRight /> Traveling and exploring new places
             </li>
           </ul>
 

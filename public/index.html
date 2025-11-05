@@ -6,31 +6,84 @@
   <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Web site created using create-react-app" />
+  <meta name="description" content="Lavan Kishore - Full Stack Developer Portfolio" />
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   <title>Lavan | Portfolio</title>
-  <meta name="description" content="Self Developed personal website build with React.js">
-
-  <!-- Google / Search Engine Tags -->
-  <meta itemprop="name" content="lavan | Portfolio">
-  <meta itemprop="description" content="Self Developed personal website build with React.js">
-  <meta itemprop="image"
-    content="https://raw.githubusercontent.com/lavan/Portfolio/master/Images/readme-img.png?token=AK7VCIF5RYEUZZAURELPTAC76U6AK">
-
-  <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="https://lavankishore.vercel.app">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="lavan2 | Portfolio">
-  <meta property="og:description" content="Self Developed personal website build with React.js">
-  <meta property="og:image"
-    content="https://raw.githubusercontent.com/lavan2/Portfolio/master/Images/readme-img.png?token=AK7VCIF5RYEUZZAURELPTAC76U6AK">
-
-  <!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content=lavan | Portfolio">
-  <meta name="twitter:description" content="Self Developed personal website build with React.js">
-  <meta name="twitter:image"
-    content="https://raw.githubusercontent.com/lavan2/Portfolio/master/Images/readme-img.png?token=AK7VCIF5RYEUZZAURELPTAC76U6AK">
+  <style>
+    * {
+      scroll-behavior: smooth;
+    }
+    body {
+      overflow-x: hidden;
+    }
+    #root {
+      animation: pageLoad 1s ease-out;
+    }
+    @keyframes pageLoad {
+      0% { opacity: 0; transform: scale(0.95); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    .navbar {
+      backdrop-filter: blur(10px);
+      background: rgba(23, 23, 40, 0.9) !important;
+      border-bottom: 1px solid rgba(199, 112, 240, 0.2);
+      transition: all 0.3s ease;
+    }
+    .card, .project-card-view {
+      background: linear-gradient(145deg, rgba(30, 30, 50, 0.8), rgba(40, 40, 70, 0.6));
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(199, 112, 240, 0.3);
+      border-radius: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover, .project-card-view:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(199, 112, 240, 0.2);
+    }
+    .tech-icons {
+      background: linear-gradient(135deg, rgba(199, 112, 240, 0.1), rgba(108, 99, 255, 0.1));
+      border-radius: 15px;
+      padding: 20px;
+      margin: 10px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.3s ease;
+    }
+    .tech-icons:hover {
+      transform: scale(1.1) rotate(5deg);
+      color: #c770f0;
+    }
+    .btn-primary {
+      background: linear-gradient(45deg, #c770f0, #6c63ff);
+      border: none;
+      border-radius: 25px;
+      box-shadow: 0 4px 15px rgba(199, 112, 240, 0.4);
+      transition: all 0.3s ease;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .social-icons {
+      transition: transform 0.3s ease;
+    }
+    .social-icons:hover {
+      transform: scale(1.2);
+    }
+    .home-about-section, .about-section {
+      background: radial-gradient(circle at 20% 80%, rgba(199, 112, 240, 0.1) 0%, transparent 50%),
+                  radial-gradient(circle at 80% 20%, rgba(108, 99, 255, 0.1) 0%, transparent 50%);
+    }
+    h1, h2, h3 {
+      text-shadow: 0 0 20px rgba(199, 112, 240, 0.3);
+    }
+    .purple {
+      background: linear-gradient(45deg, #c770f0, #6c63ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  </style>
 </head>
 
 <body>
